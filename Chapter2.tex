@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[14pt]{article}
 \usepackage[utf8]{inputenc}	% Para caracteres en español
 \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
 \usepackage{multirow,booktabs}
@@ -21,20 +21,23 @@
 \setlength{\parindent}{0.0in}
 \setlength{\parskip}{0.05in}
 \usepackage{empheq}
+\usepackage{enumitem}  
 \usepackage{framed}
 \usepackage[most]{tcolorbox}
 \usepackage{xcolor}
 \colorlet{shadecolor}{orange!15}
 \parindent 0in
-\parskip 12pt
+\parskip 14pt
 \geometry{margin=1in, headsep=0.25in}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{proposition}[theorem]{Proposition}
 \theoremstyle{definition}
 \newtheorem*{definition}{Definition}
+\newtheorem*{exercise}{Exercise}
 \newtheorem{example}[theorem]{Example}
 \theoremstyle{remark}
 \newtheorem{notation}{Notation}
@@ -54,37 +57,49 @@
 
 \begin{document}
 \setcounter{section}{0}
-\title{Sobolev Embedding Theorem}
+\title{Chapter 2}
 
 \thispagestyle{empty}
 \begin{center}
-{\LARGE \bf Sobolev Embedding Theorem}
+{\LARGE \bf Chapter 2 in \cite{Hog10}}
 \end{center}
-\section{Sobolev space $W^{1,p}(I)$}
-\begin{definition} The \emph{Sobolev space} $W^{1,p}(I)$ is defined by
-\begin{equation}\label{Sineq}
-W^{1,p}(I)=\{u\in L^p(I): there\ exists\ g\in L^p(I)\ such\ that \int_I\,u\,\phi'=-\int_I\,g\,\phi\ for\ all\ \phi\in C^1_c(I)\}
-\end{equation}
-and $H^1(I)=W^{1,2}(I)$. 
-\end{definition}
-在這空間下，我們定義$u'=g$ (這就是弱解)。結合過去學過的泛函列出以下定理。
 
-\begin{proposition} The space $W^{1,p}(I)$ is a Banach space for $1\leq p\leq\infty$. It is reflexive for $1<p<\infty$ and separable for $1\leq p<\infty.$ The space $H^1$ is a separable Hilbert space.
-\end{proposition}
-\begin{proof} 
-See \cite[p.~203]{Bre10}.
-\end{proof}
-我們列出在這低維度版本的Sobolev embedding theorem。
+\begin{exercise}[2.1-7]
+    Let a random experiment be the casting of a pair of unbiased six-sided dice, 
+    and let $X$ equal the smaller of the outcomes if they are different and the common 
+    value if they are equal.
+    \begin{enumerate}
+    \item With reasonable assumptions, find the p.m.f. of $X$.
+    \item Let $Y$ equal the range of the two outcomes (i.e. the absolute value of the difference
+     of the largest and the smallest outcomes). Determine the p.m.f. $g(y)$ of $Y$ for $y=0, 1, 2, 3, 4, 5$.
+    \end{enumerate}
+\end{exercise}
 
-\begin{theorem}\label{Sobolevembedding} There exists a constant $C$ (depending only on $\lvert I\rvert\leq\infty$) such that 
-$$
-\lVert u\rVert_{L^\infty(I)}\leq C\lVert u\rVert_{W^{1,p}(I)}\quad\forall u\in W^{1,p}(I),\ \forall 1\leq p\leq\infty.
-$$
-In other words, $W^{1,p}(I)\subset L^\infty(I)$ with continuous injection for all $1\leq p\leq\infty.$ 
-\end{theorem}
-\begin{proof} 
-See \cite[p.~213]{Bre10}.
-\end{proof}
-我們解讀這個連續入射是什麼意思，連續性是因為我們在大空間的連續性可以被小空間的連續性控制住，所以連續性是會被小空間所保證的(收斂的部分需要稠密性定理來保證)。至於入射，因為這是從小空間送到大空間，入射性自然可以保證，我們沒有改變函數本身，就一個identity map就好了，這自然是入射，但因為另一個空間比較大，自然沒辦法滿射(就找反例知道哪些函數在大空間卻不在小空間中)。所以這個不等式\eqref{Sineq}主要給我們的是連續性。
+\begin{solution}
+題目表示出$X$是六面骰骰兩次中最小點數的隨機變數。因為合計有36種可能狀況，其中
+可以知道數字為1的情況有11種，以此類推。更具體一點為，考慮$X=x$，那麼我們可以將 
+\[
+P(X\geq x)-P(X\geq x+1)=P(X=x)
+\]
+用來計算，因此
+\[
+(7-x)^2-(6-x)^2=13-2x
+\]
+所以$X$的p.m.f.為
+\[
+\frac{13-2x}{36}
+\]
+\end{solution}
+而$Y$的p.m.f.則可以直接計數得到
+\[P(Y=y)=\begin{cases}
+\frac{1}{6},\ y=0,\\
+\frac{6-y}{18},\ y=1,2,3,4,5.
+\end{cases}\]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\bibliographystyle{siam}
+\bibliography{ref.bib}
+\nocite{*}
+
 
 \end{document}
