@@ -89,13 +89,39 @@ P(X\geq x)-P(X\geq x+1)=P(X=x)
 \[
 \frac{13-2x}{36}
 \]
-\end{solution}
-而$Y$的p.m.f.則可以直接計數得到
+
+而$Y$的p.m.f.則可以直接計數(暫時沒想到其他辦法)得到
 \[P(Y=y)=\begin{cases}
 \frac{1}{6},\ y=0,\\
 \frac{6-y}{18},\ y=1,2,3,4,5.
 \end{cases}\]
+\qed
+\end{solution}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}[2.1-11]
+    In a lot (collection) of $100$ light bulbs, there are $5$ bad bulbs. An inspector
+    inspects $10$ bulbs selected at random. Find the probability of finding at least 
+    one defective bulb. Hint: First compute the probability of finding no defectives in 
+    the sample.
+\end{exercise}
+\begin{solution}
+    抽$10$個至少壞$1$個的機率
+    $$
+    P=1-\text{全部都是好的機率}=1-P'
+    $$
+    全部是好的機率就很好算了。
+    $$
+    P'=\frac{95}{100}\times\frac{94}{99}\cdots\times\frac{86}{91}
+    $$
+    藉由計算機，
+    $$
+    P=0.4163
+    $$
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newpage
 \bibliographystyle{siam}
 \bibliography{ref.bib}

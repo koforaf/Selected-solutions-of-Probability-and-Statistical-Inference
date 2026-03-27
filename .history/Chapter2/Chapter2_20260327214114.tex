@@ -1,0 +1,131 @@
+\documentclass[14pt]{article}
+\usepackage[utf8]{inputenc}	% Para caracteres en español
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[title]{appendix}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath, amsthm}
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\usepackage{empheq}
+\usepackage{enumitem}  
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 14pt
+\geometry{margin=1in, headsep=0.25in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{exercise}{Exercise}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{notation}{Notation}
+%\AtAppendix{\counterwithin{theorem}{section}}
+\setlength{\parskip}{1em}
+\DeclareMathOperator{\sign}{sign}
+\renewcommand{\thetheorem}{\arabic{section}.\arabic{theorem}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\usepackage[numbib,notlof,notlot,nottoc]{tocbibind}
+\numberwithin{equation}{section}
+\numberwithin{theorem}{section}
+\usepackage{xeCJK}
+    \setCJKmainfont[AutoFakeBold=3]{AR PL UKai TW}
+    \XeTeXlinebreaklocale "zh"             
+    \XeTeXlinebreakskip = 0pt plus 1pt
+
+
+\begin{document}
+\setcounter{section}{0}
+\title{Chapter 2}
+
+\thispagestyle{empty}
+\begin{center}
+{\LARGE \bf Chapter 2 in \cite{Hog10}}
+\end{center}
+
+\begin{exercise}[2.1-7]
+    Let a random experiment be the casting of a pair of unbiased six-sided dice, 
+    and let $X$ equal the smaller of the outcomes if they are different and the common 
+    value if they are equal.
+    \begin{enumerate}
+    \item With reasonable assumptions, find the p.m.f. of $X$.
+    \item Let $Y$ equal the range of the two outcomes (i.e. the absolute value of the difference
+     of the largest and the smallest outcomes). Determine the p.m.f. $g(y)$ of $Y$ for $y=0, 1, 2, 3, 4, 5$.
+    \end{enumerate}
+\end{exercise}
+
+\begin{solution}
+題目表示出$X$是六面骰骰兩次中最小點數的隨機變數。因為合計有36種可能狀況，其中
+可以知道數字為1的情況有11種，以此類推。更具體一點為，考慮$X=x$，那麼我們可以將 
+\[
+P(X\geq x)-P(X\geq x+1)=P(X=x)
+\]
+用來計算，因此
+\[
+(7-x)^2-(6-x)^2=13-2x
+\]
+所以$X$的p.m.f.為
+\[
+\frac{13-2x}{36}
+\]
+
+而$Y$的p.m.f.則可以直接計數(暫時沒想到其他辦法)得到
+\[P(Y=y)=\begin{cases}
+\frac{1}{6},\ y=0,\\
+\frac{6-y}{18},\ y=1,2,3,4,5.
+\end{cases}\]
+\qed
+\end{solution}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}[2.1-11]
+    In a lot (collection) of $100$ light bulbs, there are $5$ bad bulbs. An inspector
+    inspects $10$ bulbs selected at random. Find the probability of finding at least 
+    one defective bulb. Hint: First compute the probability of finding no defectives in 
+    the sample.
+\end{exercise}
+\begin{solution}
+    抽$10$個至少壞$1$個的機率
+    $$
+    P=1-\text{全部都是好的機率}=1-P'
+    $$
+    全部是好的機率就很好算了。
+    $$
+    P'=\frac{95}{100}\times\frac{94}{99}\cdots\times\frac{86}{91}
+    $$
+    藉由計算機，
+    $$
+    P=0.4163
+    $$
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\bibliographystyle{siam}
+\bibliography{ref.bib}
+\nocite{*}
+
+
+\end{document}

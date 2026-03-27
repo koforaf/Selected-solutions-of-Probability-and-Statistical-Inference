@@ -1,18 +1,18 @@
 # Fdb version 4
-["bibtex Chapter2"] 1774522525.9397 "Chapter2.aux" "Chapter2.bbl" "Chapter2" 1774526112.33163 0
-  "./ref.bib" 1774522471 170 0b69f121a147513c538eadd2c3819c98 ""
+["bibtex Chapter2"] 1774522525.9397 "Chapter2.aux" "Chapter2.bbl" "Chapter2" 1774618877.04041 0
   "C:/Users/Tigerkin/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/siam.bst" 1291864356 19403 812681d329611d2a1625ad7ae5186edc ""
-  "Chapter2.aux" 1774526111 295 700d699ac765b8af9a21e18ba61d6050 "xelatex"
+  "Chapter2.aux" 1774618876 295 700d699ac765b8af9a21e18ba61d6050 "xelatex"
+  "ref.bib" 0 -1 0 ""
   (generated)
   "Chapter2.bbl"
   "Chapter2.blg"
   (rewritten before read)
-["xdvipdfmx"] 1774526112.03035 "Chapter2.xdv" "Chapter2.pdf" "Chapter2" 1774526112.33812 0
-  "Chapter2.xdv" 1774526111 21232 5f54177c29f6252a6411010668fff423 "xelatex"
+["xdvipdfmx"] 1774618876.7385 "Chapter2.xdv" "Chapter2.pdf" "Chapter2" 1774618877.04648 0
+  "Chapter2.xdv" 1774618876 25160 8a2e31a47e8ec2b25dc54fe62e34fe92 "xelatex"
   (generated)
   "Chapter2.pdf"
   (rewritten before read)
-["xelatex"] 1774526110.3325 "c:/Users/Tigerkin/OneDrive/Desktop/Tex/Solution of Probability/Selected-solutions-of-Probability-and-Statistical-Inference/Chapter2.tex" "Chapter2.xdv" "Chapter2" 1774526112.33187 0
+["xelatex"] 1774618875.18123 "c:/Users/Tigerkin/OneDrive/Desktop/Tex/Solution of Probability/Selected-solutions-of-Probability-and-Statistical-Inference/Chapter2/Chapter2.tex" "Chapter2.xdv" "Chapter2" 1774618877.04068 0
   "C:/Users/Tigerkin/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1718247092 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Tigerkin/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1728476778 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "C:/Users/Tigerkin/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs7.tfm" 1774521341 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
@@ -188,10 +188,10 @@
   "C:/Users/Tigerkin/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.cfg" 1659726270 408 7369c27beaa819c5f46de3795b22ee3e ""
   "C:/Users/Tigerkin/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/Tigerkin/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
-  "Chapter2.aux" 1774526111 295 700d699ac765b8af9a21e18ba61d6050 "xelatex"
+  "Chapter2.aux" 1774618876 295 700d699ac765b8af9a21e18ba61d6050 "xelatex"
   "Chapter2.bbl" 1774522526 172 3832c8ff8cc7473add329a7d439408e2 "bibtex Chapter2"
-  "Chapter2.tex" 1774526109 3206 c6de729beb0a222744f8f6a22ee62bcd ""
-  "c:/Users/Tigerkin/OneDrive/Desktop/Tex/Solution of Probability/Selected-solutions-of-Probability-and-Statistical-Inference/Chapter2.tex" 1774526109 3206 c6de729beb0a222744f8f6a22ee62bcd ""
+  "Chapter2.tex" 1774618874 3935 0ca5410cb40338852f065a6e26dc239b ""
+  "c:/Users/Tigerkin/OneDrive/Desktop/Tex/Solution of Probability/Selected-solutions-of-Probability-and-Statistical-Inference/Chapter2/Chapter2.tex" 1774618874 3935 0ca5410cb40338852f065a6e26dc239b ""
   (generated)
   "Chapter2.aux"
   "Chapter2.log"
