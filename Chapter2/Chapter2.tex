@@ -46,13 +46,14 @@
 \DeclareMathOperator{\sign}{sign}
 \renewcommand{\thetheorem}{\arabic{section}.\arabic{theorem}}
 \renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
-\usepackage[numbib,notlof,notlot,nottoc]{tocbibind}
+\usepackage[notlof,notlot,nottoc]{tocbibind}
 \numberwithin{equation}{section}
 \numberwithin{theorem}{section}
 \usepackage{xeCJK}
     \setCJKmainfont[AutoFakeBold=3]{AR PL UKai TW}
     \XeTeXlinebreaklocale "zh"             
     \XeTeXlinebreakskip = 0pt plus 1pt
+
 
 
 \begin{document}
@@ -119,10 +120,37 @@ P(X\geq x)-P(X\geq x+1)=P(X=x)
     $$
     P=0.4163
     $$
+    \qed
 \end{solution}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{exercise}[2.1-13]
+    Let X be the no. of accidents per week in a factory. Let the p.m.f.
+    of $X$ be
+    $$
+    f(x)=\frac{1}{(x+1)(x+2)},\quad x=0,1,2,\cdots.
+    $$
+    Find the conditional probability of $X\geq4$, given that $X\geq1$.
+    Hint:Write $f(x)=1/(x+1)-1/(x+2)$.
+\end{exercise}
+\begin{solution}
+    $$
+    P(X\geq4|X\geq1)=\frac{P(X\geq4\cap X\geq1)}{P(X\geq1)}=\frac{P(X\geq4)}{P(X\geq1)}
+    $$
+    那麼先算$X\geq4$，
+    $$
+    P(X\geq4)=\sum^\infty_4 \frac{1}{n+1}-\frac{1}{n+2}=\frac{1}{5}
+    $$
+    以及
+    $$
+    P(X\geq1)=\sum^\infty_1 \frac{1}{n+1}-\frac{1}{n+2}=\frac{1}{5}=\frac{1}{2}
+    $$
+    所以答案為$\frac{2}{5}$。
+    \qed
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+
 \bibliographystyle{siam}
 \bibliography{ref.bib}
 \nocite{*}
