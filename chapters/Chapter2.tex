@@ -1,68 +1,7 @@
-\documentclass[14pt]{article}
-\usepackage[utf8]{inputenc}	% Para caracteres en español
-\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
-\usepackage{multirow,booktabs}
-\usepackage[table]{xcolor}
-\usepackage{fullpage}
-\usepackage{lastpage}
-\usepackage{enumitem}
-\usepackage{fancyhdr}
-\usepackage{mathrsfs}
-\usepackage{wrapfig}
-\usepackage{setspace}
-\usepackage{calc}
-\usepackage{multicol}
-\usepackage{cancel}
-\usepackage[title]{appendix}
-\usepackage[retainorgcmds]{IEEEtrantools}
-\usepackage[margin=3cm]{geometry}
-\usepackage{amsmath, amsthm}
-\newlength{\tabcont}
-\setlength{\parindent}{0.0in}
-\setlength{\parskip}{0.05in}
-\usepackage{empheq}
-\usepackage{enumitem}  
-\usepackage{framed}
-\usepackage[most]{tcolorbox}
-\usepackage{xcolor}
-\colorlet{shadecolor}{orange!15}
-\parindent 0in
-\parskip 14pt
-\geometry{margin=1in, headsep=0.25in}
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{proposition}[theorem]{Proposition}
-\theoremstyle{definition}
-\newtheorem*{definition}{Definition}
-\newtheorem*{exercise}{Exercise}
-\newtheorem{example}[theorem]{Example}
-\theoremstyle{remark}
-\newtheorem{notation}{Notation}
-%\AtAppendix{\counterwithin{theorem}{section}}
-\setlength{\parskip}{1em}
-\DeclareMathOperator{\sign}{sign}
-\renewcommand{\thetheorem}{\arabic{section}.\arabic{theorem}}
-\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
-\usepackage[notlof,notlot,nottoc]{tocbibind}
-\numberwithin{equation}{section}
-\numberwithin{theorem}{section}
-\usepackage{xeCJK}
-    \setCJKmainfont[AutoFakeBold=3]{AR PL UKai TW}
-    \XeTeXlinebreaklocale "zh"             
-    \XeTeXlinebreakskip = 0pt plus 1pt
-
-
-
-\begin{document}
 \setcounter{section}{0}
-\title{Chapter 2}
 
-\thispagestyle{empty}
 \begin{center}
-{\LARGE \bf Chapter 2 in \cite{Hog10}}
+{\LARGE \bfseries Chapter 2}
 \end{center}
 
 \begin{exercise}[2.1-7]
@@ -149,11 +88,19 @@ P(X\geq x)-P(X\geq x+1)=P(X=x)
     \qed
 \end{solution}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
+\begin{exercise}[2.1-15]
+    A professor gave her students six essay questions, from which she will select three for a test. A students has time to study for only three of these questions. 
+    What is the probability that, of the questions studied,
+    \begin{enumerate}
+        \item at least one is selected for the test?
+        \item all three are selected for the test?
+        \item exactly two are selected for the test?
+    \end{enumerate}
+\end{exercise}
+\begin{solution}
 
-\bibliographystyle{siam}
-\bibliography{ref.bib}
-\nocite{*}
+    \qed
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\end{document}

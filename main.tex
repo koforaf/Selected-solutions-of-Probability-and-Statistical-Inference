@@ -1,0 +1,86 @@
+% !TeX program = xelatex
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[title]{appendix}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage[margin=1in]{geometry}
+\usepackage{empheq}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage[notlof,notlot,nottoc]{tocbibind}
+
+% 中文
+\usepackage{xeCJK}
+\setCJKmainfont{Microsoft JhengHei}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\colorlet{shadecolor}{orange!15}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+% Theorem, Lemma, Proposition: italic
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+% Definition, Exercise, Solution: normal font
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{exercise}{Exercise}
+\newtheorem*{solution}{Solution}
+\newtheorem{example}[theorem]{Example}
+
+% Remark
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem{notation}{Notation}
+
+\DeclareMathOperator{\sign}{sign}
+
+\numberwithin{equation}{section}
+\numberwithin{theorem}{section}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    \vspace*{4cm}
+
+    {\Huge\bfseries
+    Solution Manual of Probability
+    \par}
+
+    \vfill
+
+    {\large
+    \today
+    \par}
+
+\end{titlepage}
+
+\input{chapters/Chapter2}
+
+\nocite{*}
+\bibliographystyle{siam}
+\bibliography{ref}
+
+\end{document}
