@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.8.15)  15 AUG 2026 15:40
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.8.15)  15 AUG 2026 19:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1247,7 +1247,19 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 9.
 (C:\Users\chian\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-[1]) [2] (main.bbl) [3]
+[1] [2]
+Overfull \hbox (17.44774pt too wide) in paragraph at lines 141--143
+\TU/lmr/m/n/12 and thus, that $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (0) = 2109/833
+0\OML/cmm/m/it/12 ; f\OT1/cmr/m/n/12 (1) = 703/1666\OML/cmm/m/it/12 ; f\OT1/cmr
+/m/n/12 (2) = 209/833\OML/cmm/m/it/12 ; f\OT1/cmr/m/n/12 (3) = 55/833\OML/cmm/m
+/it/12 ; f\OT1/cmr/m/n/12 (4) =
+ []
+
+File: img/Figure_1.jpeg Graphic file (type bmp)
+<img/Figure_1.jpeg>
+File: img/Figure_2.jpeg Graphic file (type bmp)
+<img/Figure_2.jpeg>
+) [3] [4] (main.bbl) [5]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (main.aux)
@@ -1257,12 +1269,12 @@ L3 programming layer <2026/08/07>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 28054 strings out of 402620
- 653286 string characters out of 5438883
- 1145381 words of memory out of 5000000
- 56682 multiletter control sequences out of 15000+600000
+ 28106 strings out of 402620
+ 655579 string characters out of 5438883
+ 1177871 words of memory out of 5000000
+ 56730 multiletter control sequences out of 15000+600000
  633586 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,8n,121p,605b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,9n,121p,605b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (4 pages).
+Output written on main.pdf (6 pages).

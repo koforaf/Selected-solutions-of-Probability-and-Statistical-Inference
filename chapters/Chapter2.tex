@@ -120,5 +120,50 @@ P(X\geq x)-P(X\geq x+1)=P(X=x)
     \qed
 \end{solution}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[2.1-17]
+    Five card are selected at random without replacement from a standard, thoroughly shuffled 52-card deck of playing cards. 
+    Let $X$ be the number of face cards (kings, queens, jacks) in the hand. Forty observations of $X$ yielded the following data:
+    \begin{table}[h!]
+    \begin{center}
+    \begin{tabular}{*{20}{c}}
+    2 & 1 & 2 & 1 & 0 & 0 & 1 & 0 & 1 & 1\\
+    0 & 2 & 0 & 2 & 3 & 0 & 1 & 1 & 0 & 3\\
+    1 & 2 & 0 & 2 & 0 & 2 & 0 & 1 & 0 & 1\\
+    1 & 2 & 1 & 0 & 1 & 1 & 2 & 1 & 1 & 0
+    \end{tabular}
+    \end{center}
+    \end{table}
+    \begin{enumerate}
+        \item Argue that the p.m.f. of $X$ is 
+        $$
+        f(x)=\frac{C^{12}_x\times C^{40}_{5-x}}{C^{52}_5},\quad x=0,1,2,3,4,5
+        $$
+        and thus, that $f(0)=2109/8330,f(1)=703/1666,f(2)=209/833,f(3)=55/833,f(4)=165/21658,f(5)=33/108290$.
+        \item Draw a probability histogram for this distribution.
+        \item Determine the relative frequencies of $0,1,2,3$, and superimpose the relative frequency histogram on your probability histogram.
+    \end{enumerate}
+\end{exercise}
+\begin{solution}
+    教授挑選題目的種類為 $C^6_3=20$。
+\begin{enumerate}
+    \item 分母沒有問題，分子左側為$12$人頭牌中剛好被拿出了幾張，以及非人頭牌被拿出剩下的張數。此分配為超幾何分配。
+    \item 理論機率直方圖為 Figure~\ref{fig:1}。
+    \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/Figure_1.jpeg} % 檔名與寬度設定
+    \caption{理論機率直方圖} % 圖說
+    \label{fig:1} % 標籤供交互參照
+    \end{figure}
+    \item 以「實驗得到的 relative frequency histogram」和「理論 probability histogram」比較。能看出從實驗得到的數據與理論值雖有差異但還是相當接近。
+    \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/Figure_2.jpeg} % 檔名與寬度設定
+    \caption{相對機率直方圖} % 圖說
+    \label{fig:2} % 標籤供交互參照
+    \end{figure}
+\end{enumerate}
+    \qed
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
