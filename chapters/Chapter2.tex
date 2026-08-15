@@ -154,7 +154,7 @@ P(X\geq x)-P(X\geq x+1)=P(X=x)
     \caption{理論機率直方圖} % 圖說
     \label{fig:1} % 標籤供交互參照
     \end{figure}
-    \item 以「實驗得到的 relative frequency histogram」和「理論 probability histogram」比較。能看出從實驗得到的數據與理論值雖有差異但還是相當接近。
+    \item 以「實驗得到的 relative frequency histogram」和「理論 probability histogram」比較 (Figure~\ref{fig:2})。能看出從實驗得到的數據與理論值雖有差異但還是相當接近。
     \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{img/Figure_2.jpeg} % 檔名與寬度設定
@@ -163,6 +163,25 @@ P(X\geq x)-P(X\geq x+1)=P(X=x)
     \end{figure}
 \end{enumerate}
     \qed
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[2.1-19]
+    A bag contains 144 ping-pong balls. More than half of the balls are painted orange and the rest are painted orange and the rest are painted blue. Two balls are simultaneously drawn at random.
+     The probability of drawing two balls of the same color is the same as the probability of drawing two balls of different colors. How many orange balls are in the bag?
+\end{exercise}
+\begin{solution}
+假設橘球數量為$x$，從抽出同色與抽出異色機率相等出手，
+$$
+P(\text{同色})=P(\text{異色})
+$$
+分母都相同，分子列式為
+$$\begin{aligned}
+C^x_1C^{144-x}_1&=C^x_2+C^{144-x}_2,\\
+288x-2x^2&=x(x-1)+(144-x)(143-x),\\
+x=78 &\lor x=66.
+\end{aligned}$$
+所以橘色球數量為$78$個。
+\qed
 \end{solution}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
