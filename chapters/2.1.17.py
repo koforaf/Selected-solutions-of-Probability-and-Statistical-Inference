@@ -66,7 +66,5 @@ plt.ylabel("Probability / Relative Frequency")
 plt.title("Theoretical Distribution vs. Observed Data")
 
 plt.xticks(x)
-
 plt.legend()
-
 plt.show()
