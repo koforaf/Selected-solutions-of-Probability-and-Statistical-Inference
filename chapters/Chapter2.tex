@@ -184,4 +184,21 @@ x=78 &\lor x=66.
 \qed
 \end{solution}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{exercise}[2.2-3]
+    In a particular lottery, 3 million tickets are sold each week for 50¢ apiece. Out of the 3 million tickets, 12,006 are drawn at random and without replacement 
+    and awarded prizes: twelve thousand \$25 prizes, four \$ 10,000 prizes, one \$50,000 prize, and one \$200,000 prize. If you purchased a single ticket, what is the expected value 
+    of this game to you?
+\end{exercise}
+\begin{solution}
+中 \$25 的機率為 $\frac{12000}{3000000}$，中 \$10000 的機率為 $\frac{4}{3000000}$，中 \$50000 的機率為 $\frac{1}{3000000}$，中 \$200000 的機率為 $\frac{1}{3000000}$，賠\$ 0.5的機率為 $1$ 因為一定要付錢買樂透。
+所以列式為
 
+$$
+\begin{aligned}
+E(X)&=\frac{12000}{3000000}\times 25+\frac{4}{3000000}\times 10000+\frac{1}{3000000}\times 50000+\frac{1}{3000000}-\frac{1}{2}\\
+&=\frac{590000}{30000000}-\frac{1}{2}=\frac{59}{300}-\frac{1}{2}\\
+&=\frac{-91}{300}\approx -0.3033
+\end{aligned}$$
+\qed
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
